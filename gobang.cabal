@@ -15,8 +15,12 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     Lib, Data.Ownership
   build-depends:       base >= 4.7 && < 5
+                     , repa >= 3.4 && < 4
+                     , vector < 1
+                     , data-default < 1
+                     , vector-th-unbox < 1
   default-language:    Haskell2010
 
 executable gobang-exe
