@@ -1,6 +1,15 @@
-module Main where
+module Main
+(
+    main
+) where
 
-import Lib
+import Lib (Grid, makeGrid)
+
+-- import qualified System.Environment as Env
 
 main :: IO ()
-main = someFunc
+main = do
+    let grid = makeGrid 19 19
+        in print grid
+    return ()
+
